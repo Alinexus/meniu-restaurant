@@ -1,0 +1,214 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbf2e0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Header styles */
+header {
+    background-color: #2980b9;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Menu styles */
+.categorie {
+    background-color: #d3b58b;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.categorie h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.produse {
+    display: none; /* Ascuns inițial */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.produse.active {
+    display: flex; /* Se afișează când este activ */
+}
+
+
+/* Product card styles */
+.produs {
+    display: flex;
+    align-items: center;
+    background-color: #ebe3d3;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 300px;
+}
+
+.produs:hover {
+    background-color: #9e886a;
+}
+
+.produs img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.produs-detalii {
+    flex: 1;
+}
+
+.produs-detalii h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.produs-detalii p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* Product page styles */
+.produs-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.produs-imagine {
+    width: 30%;
+}
+
+.produs-imagine img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.produs-detalii {
+    width: 60%;
+}
+
+.produs-detalii h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.produs-detalii h3 {
+    margin-top: 15px;
+}
+
+.produs-detalii p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Back button styles */
+.back-button {
+    background-color: #e74c3c;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .produse {
+        justify-content: center;
+    }
+
+    .produs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produs-imagine, .produs-detalii {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('fonts/Ethnocentric.woff') format('truetype');
+}
+
+.my-text {
+    font-family: 'Ethnocentric', sans-serif;
+    text-align: center;
+}
+
+ .img-categorie {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    background: transparent; /* Elimină fundalul */
+}
+
+.btn-header {
+    display: flex;
+    align-items: center;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 16px;
+    background: #ebe3d3;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn-header:hover {
+    background: #9e886a;
+}
+
+.btn-header i {
+    margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .categorie {
+        width: 550px; /* Ajustează lățimea după preferințe */
+        padding: 6px;
+        font-size: 14px;
+        margin-top: 5px;
+        text-align: center;
+    }
+}
